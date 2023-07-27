@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Load the main bootstrap style sheet -->
+		<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+		<title>Take a quiz</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			<div id="one" class="col-md-12">
+				<h3 class="text-warning">Welcome to the online quiz system</h3>
+				<p>Select your name from the list below and choose a quiz from the list of available quizzes.
+				<fieldset>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+      					<label for="names">Name</label>
+      					<select class="form-control col-md-6" id="names">
+								</select>
+    				</div>
+						<div class="form-group col-md-6">
+      					<label for="quiz">Quiz</label>
+      					<select class="form-control col-md-6" id="quiz">
+    						</select>
+						</div>
+					</div>
+					<button class="btn btn-primary" id="take">Start</button>
+				</fieldset>
+			</div>
+			<div id="two" class="col-md-12">
+				<h3 class="text-warning">Quiz questions</h3>
+				<p>Answer the questions below and click submit when you are done.</p>
+				<hr/>
+				<div id="questions">
+				</div>
+				<hr/>
+				<div class="col-md-offset-10 col-md-2"><button id="submit" class="btn btn-primary">Submit</button></div>
+			</div>
+			<div id="three" class="col-md-12">
+				<h3 class="text-warning">Answers submitted</h3>
+				<p>Thank you for taking the quiz!</p>
+			</div>
+        <!-- Since our script will depend on JQuery, we load JQuery first. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="quiz.js"></script>
+		</div>
+	</body>
+</html>
